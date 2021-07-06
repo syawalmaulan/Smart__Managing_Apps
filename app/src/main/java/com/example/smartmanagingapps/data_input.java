@@ -19,6 +19,7 @@ public class data_input extends AppCompatActivity {
         Button Btn4 = findViewById(R.id.Spraying);
         Button Btn5 = findViewById(R.id.Harvesting);
         Button Btn6 = findViewById(R.id.PostHarvest);
+        Button Btn7 = findViewById(R.id.Result);
 
         Btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +56,11 @@ public class data_input extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Btn6.setOnClickListener(new View.OnClickListener() {
+
+        Btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),postharvest.class);
+                Intent intent = new Intent(v.getContext(),outputdisplay.class);
                 startActivity(intent);
             }
         });
