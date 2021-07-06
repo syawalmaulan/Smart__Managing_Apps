@@ -152,7 +152,7 @@
             android:text="Harvesting" />
 
         <Button
-            android:id="@+id/PostHarvst"
+            android:id="@+id/PostHarvest"
             android:layout_width="411dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
