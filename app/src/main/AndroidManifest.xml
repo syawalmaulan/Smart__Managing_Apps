@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartManagingApps">
-        <activity android:name=".spraying"></activity>
+        <activity android:name=".postharvest"></activity>
+        <activity android:name=".harvesting" />
+        <activity android:name=".fertilizing" />
+        <activity android:name=".fertlizing" />
+        <activity android:name=".spraying" />
         <activity android:name=".seeding" />
         <activity android:name=".land_preparation" />
         <activity android:name=".data_input" />

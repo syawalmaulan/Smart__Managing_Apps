@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".seeding"
+    tools:context=".fertilizing"
     tools:ignore="HardcodedText,ObsoleteLayoutParam,DuplicateIds,TextFields,SpUsage" >
 
     <LinearLayout
@@ -15,9 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:text="SEEDING"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:text="SPRAYING"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text1"
@@ -29,48 +29,35 @@
             android:typeface="monospace"
             android:textColor="#000000" />
 
-        <TextView
-            android:id="@+id/textLS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="\nMethod used"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <RadioButton
-                android:id="@+id/radioDirect"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Direct Seeding" />
-
-            <RadioButton
-                android:id="@+id/radioTransplanting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Transplanting" />
-
-
-        </RadioGroup>
 
         <TextView
-            android:id="@+id/textVariety"
+            android:id="@+id/textFW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Variety"
+            android:text="Weight/bag(kg)"
             android:textSize="15dp"
             android:textStyle="bold"
             android:typeface="monospace"
             android:textColor="#000000" />
 
         <EditText
-            android:id="@+id/editVariety"
+            android:id="@+id/editFW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:typeface="monospace" />
+        <TextView
+            android:id="@+id/textBag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No.of Bag used"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editBag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -92,6 +79,67 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:typeface="monospace" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ratio of N:P:K"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+        <TextView
+            android:id="@+id/textP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+
 
         <TextView
             android:id="@+id/textView1"
@@ -117,8 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:typeface="monospace" >
-        </EditText>
+            android:typeface="monospace" />
 
         <TextView
             android:id="@+id/textEnd"
@@ -154,64 +201,7 @@
             android:textSize="20dp"
             android:typeface="monospace" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Weight"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textWT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Transplanter(kg)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editWT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/textWS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seed(kg/bag)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editWS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-        <TextView
-            android:id="@+id/textBag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No. of Bags used"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editWS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -221,28 +211,12 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textOC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Operation(RM/ha)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editOC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
 
         <TextView
             android:id="@+id/textSC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seed(RM/bag)"
+            android:text="Pesticide(RM/bottle)"
             android:textSize="15dp"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -271,7 +245,6 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:typeface="monospace" />
-
 
 
 
