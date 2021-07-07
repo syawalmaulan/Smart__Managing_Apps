@@ -15,6 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:text="SPRAYING"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -23,43 +25,52 @@
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
             android:text="please fill all the info correctly and put 0 if not related"
+            android:textColor="#000000"
             android:textSize="10dp"
             android:textStyle="italic"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
 
         <TextView
             android:id="@+id/textFW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Weight/bag(kg)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editFW"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="15dp"
             android:typeface="monospace" />
+
         <TextView
             android:id="@+id/textBag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="No.of Bag used"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editBag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -67,16 +78,19 @@
             android:id="@+id/textArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Area(ha)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -86,40 +100,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="0dp"
             android:text="Ratio of N:P:K"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="N"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
+
         <TextView
             android:id="@+id/textP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="P"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -127,16 +149,19 @@
             android:id="@+id/textK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="K"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -146,6 +171,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="0dp"
             android:text="Time Taken"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -154,16 +180,19 @@
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Start"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -171,16 +200,19 @@
             android:id="@+id/textEnd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="End"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editEnd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -188,16 +220,19 @@
             android:id="@+id/textDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Duration(h)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editDuration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -207,6 +242,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="0dp"
             android:text="Cost"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -216,44 +252,49 @@
             android:id="@+id/textSC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Pesticide(RM/bottle)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editSC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:textSize="20dp"
-            android:typeface="monospace" />
+            android:typeface="monospace"
+            android:layout_marginEnd="10dp" />
 
         <TextView
             android:id="@+id/textLC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Labour(RM/ha)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editLC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
-
 
 
         <Button
             android:id="@+id/Next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:text="Next" />
 
     </LinearLayout>
