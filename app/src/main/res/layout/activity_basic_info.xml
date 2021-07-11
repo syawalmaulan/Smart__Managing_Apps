@@ -82,21 +82,23 @@
         android:textStyle="bold"
         android:typeface="monospace" />
 
-    <RadioButton
-        android:id="@+id/radioRent"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:text="Rent" />
+        android:layout_marginStart="5dp">
 
-    <RadioButton
-        android:id="@+id/radioOwn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:text="Own Land" />
+        <RadioButton
+            android:id="@+id/radioRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rental" />
+
+        <RadioButton
+            android:id="@+id/radioOwn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Own Land" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/button"
