@@ -21,6 +21,7 @@ public class basic_info_activity extends AppCompatActivity {
         setContentView(R.layout.activity_basic_info);
         SQLHelper db = new SQLHelper(this);
         Button btn = findViewById(R.id.button);
+        Button btn2 = findViewById(R.id.button2);
         EditText editName = findViewById(R.id.editName);
         EditText editLocation = findViewById(R.id.editLocation);
         EditText editSize = findViewById(R.id.editSize);
@@ -28,6 +29,12 @@ public class basic_info_activity extends AppCompatActivity {
         RadioButton landStat2 = findViewById(R.id.radioOwn);
 
         List<String> list = new ArrayList<String>();
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                db.deleteSQLData();
+            }
+        });
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
