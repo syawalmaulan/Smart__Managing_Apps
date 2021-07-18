@@ -26,6 +26,7 @@ public class land_preparation extends AppCompatActivity {
         Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(v.getContext(),data_input.class);
                 startActivity(intent);
             }
@@ -34,5 +35,26 @@ public class land_preparation extends AppCompatActivity {
     @Override
     public void onBackPressed () {
         Toast.makeText(this, "To Get Back To Previous Page, Finish Filling Up the Details", Toast.LENGTH_SHORT).show();
+    }
+
+    void insertDataToLandPrepTable(LandPrepTable landPrepTable){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                DatabaseHandler.getInstance(getApplicationContext()).landPrepDAO().InsertLandPrepInfo(landPrepTable);
+            }
+        });
+        thread.start();
+        Toast.makeText(getApplicationContext(),landPrepTable.getId(),Toast.LENGTH_SHORT);
+    }
+    void deleteTable(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                DatabaseHandler.getInstance(getApplicationContext()).landPrepDAO().deleteAll();
+            }
+        });
+        thread.start();
+        Toast.makeText(getApplicationContext(),"All values in Table has been removed",Toast.LENGTH_SHORT);
     }
 }

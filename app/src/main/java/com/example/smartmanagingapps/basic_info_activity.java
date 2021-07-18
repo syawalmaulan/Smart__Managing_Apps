@@ -19,7 +19,6 @@ public class basic_info_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_info);
-        SQLHelper db = new SQLHelper(this);
         Button btn = findViewById(R.id.button);
         Button btn2 = findViewById(R.id.button2);
         EditText editName = findViewById(R.id.editName);
@@ -32,7 +31,7 @@ public class basic_info_activity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db.deleteSQLData();
+                deleteTable();
             }
         });
         btn.setOnClickListener(new View.OnClickListener() {
@@ -40,23 +39,47 @@ public class basic_info_activity extends AppCompatActivity {
             public void onClick(View v) {
                 String name = editName.getText().toString();
                 String loc = editLocation.getText().toString();
-                String size = editSize.getText().toString();
-                String landStat = getLandStat(landStat1,landStat2);
-                list.add(name);list.add(loc);list.add(landStat);list.add(size);
-                db.addBasicData(list);
+                int size = Integer.parseInt(String.valueOf(editSize.getText()));
+                boolean landStat = true;
+                landStat = getLandStat(landStat1,landStat2,landStat);
+                Basic_Info_DB basic_info_db = new Basic_Info_DB(name,loc,size,landStat);
+                insertDataToBasicTable(basic_info_db);
                 Intent intent = new Intent(v.getContext(),data_input.class);
                 startActivity(intent);
             }
         });
     }
 
-    String getLandStat(RadioButton v1, RadioButton v2){
-        String val = "0";
+
+    void insertDataToBasicTable(Basic_Info_DB basic_info_db){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().InsertBasicInfo(basic_info_db);
+            }
+        });
+        thread.start();
+        Toast.makeText(getApplicationContext(),basic_info_db.getNameVal().toString(),Toast.LENGTH_SHORT);
+    }
+    void deleteTable(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().deleteAll();
+            }
+        });
+        thread.start();
+        Toast.makeText(getApplicationContext(),"All values in Table has been removed",Toast.LENGTH_SHORT);
+    }
+
+
+    boolean getLandStat(RadioButton v1, RadioButton v2,boolean val){
+
         if(v1.isChecked() == true){
-            return  val =  "1";
+            return  val =  false;//rent
         }
         else if(v2.isChecked() == true){
-            return val =  "2";
+            return val =  true;//true
         }
         return val;
     }
