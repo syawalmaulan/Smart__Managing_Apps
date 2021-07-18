@@ -18,7 +18,6 @@ public class seeding extends AppCompatActivity {
         RadioButton Method1 = findViewById(R.id.radioDirect);
         RadioButton Method2 = findViewById(R.id.radioTransplanting);
         EditText editVariety = findViewById(R.id.editVariety);
-        EditText editArea  = findViewById(R.id.editArea);
         EditText editStart = findViewById(R.id.editStart);
         EditText editEnd = findViewById(R.id.editEnd);
         EditText editDuration = findViewById(R.id.editDuration);
