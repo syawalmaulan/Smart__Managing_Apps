@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class data_input extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +57,13 @@ public class data_input extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        Btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),postharvest.class);
+                startActivity(intent);
+            }
+        });
         Btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

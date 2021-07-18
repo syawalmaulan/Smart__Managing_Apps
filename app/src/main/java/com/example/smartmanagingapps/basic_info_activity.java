@@ -19,8 +19,13 @@ public class basic_info_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_info);
+ test
         Button btn = findViewById(R.id.button);
         Button btn2 = findViewById(R.id.button2);
+      
+        SQLHelper db = new SQLHelper(this);
+        Button btn = findViewById(R.id.buttonNext);
+     master
         EditText editName = findViewById(R.id.editName);
         EditText editLocation = findViewById(R.id.editLocation);
         EditText editSize = findViewById(R.id.editSize);

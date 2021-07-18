@@ -44,6 +44,7 @@
             android:textStyle="bold" />
 
         <TextView
+
             android:id="@+id/textArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,6 +67,8 @@
             android:inputType="number" />
 
         <TextView
+
+
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,7 +82,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editStart"
+            android:id="@+id/editStartFT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -102,7 +105,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editEnd"
+            android:id="@+id/editEndFT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -112,7 +115,7 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textDuration"
+            android:id="@+id/textDurationFT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -125,7 +128,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editDuration"
+            android:id="@+id/editDurationFT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -149,7 +152,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editWeight"
+            android:id="@+id/editWeightFT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -172,7 +175,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editCost"
+            android:id="@+id/editCostFT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -182,7 +185,7 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/Secondtillage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -191,6 +194,7 @@
             android:textStyle="bold" />
 
         <TextView
+
             android:id="@+id/textArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -214,6 +218,7 @@
             android:typeface="monospace" />
 
         <TextView
+
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -227,7 +232,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editStart"
+            android:id="@+id/editStartST"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -250,7 +255,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editEnd"
+            android:id="@+id/editEndST"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -260,7 +265,7 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textDuration"
+            android:id="@+id/textDurationST"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -273,7 +278,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editDuration"
+            android:id="@+id/editDurationST"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -297,7 +302,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editWeight"
+            android:id="@+id/editWeightST"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -320,7 +325,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editCost"
+            android:id="@+id/editCostST"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -330,7 +335,7 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/Thirdtillage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -339,6 +344,7 @@
             android:textStyle="bold" />
 
         <TextView
+
             android:id="@+id/textArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -362,6 +368,8 @@
             android:typeface="monospace" />
 
         <TextView
+
+
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -375,14 +383,18 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editStart"
+            android:id="@+id/editStartTT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:textSize="20dp"
+
             android:typeface="monospace"></EditText>
+
+            android:typeface="monospace" />
+
 
         <TextView
             android:id="@+id/textEnd"
@@ -398,7 +410,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editEnd"
+            android:id="@+id/editEndTT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -421,7 +433,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editDuration"
+            android:id="@+id/editDurationTT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -445,7 +457,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editWeight"
+            android:id="@+id/editWeightTT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -468,7 +480,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editCost"
+            android:id="@+id/editCostTT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -478,7 +490,7 @@
             android:typeface="monospace" />
 
         <Button
-            android:id="@+id/Next"
+            android:id="@+id/NextLP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
