@@ -92,4 +92,8 @@ public class SQLHelper extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 //    void addLandPrepData(int area, int p, int k , )
+    void deleteSQLData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from "+ TABLE_DATA_INPUT);
+    }
 }

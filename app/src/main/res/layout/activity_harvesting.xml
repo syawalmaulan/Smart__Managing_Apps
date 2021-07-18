@@ -6,62 +6,73 @@
     tools:ignore="HardcodedText,ObsoleteLayoutParam,DuplicateIds,TextFields,SpUsage" >
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="912dp"
-        android:orientation="vertical" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
+            android:layout_marginTop="10dp"
             android:text="HARVESTING"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
             android:text="please fill all the info correctly and put 0 if not related"
+            android:textColor="#000000"
             android:textSize="10dp"
             android:textStyle="italic"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
+            android:typeface="monospace" />
 
 
         <TextView
             android:id="@+id/textDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Date"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editDate"
+            android:id="@+id/editTextDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="date" />
 
         <TextView
             android:id="@+id/textArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Area(ha)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editArea"
+            android:id="@+id/editArea2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -69,16 +80,20 @@
             android:id="@+id/textYield"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Harvested Yield(Tonne)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editYield"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -86,27 +101,33 @@
             android:id="@+id/textLS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="\nType of combine harvester used"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/radioMini"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Mini combine harvester" />
 
             <RadioButton
                 android:id="@+id/radioCombine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Combine harvester" />
 
 
@@ -125,50 +146,62 @@
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Start"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editStart"
+            android:id="@+id/editTextTime3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="time" />
 
         <TextView
             android:id="@+id/textEnd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="End"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editEnd"
+            android:id="@+id/editTextTime4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="time" />
 
         <TextView
             android:id="@+id/textDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Duration(h)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editDuration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -185,16 +218,20 @@
             android:id="@+id/textCC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Combine harvester(RM/tonne)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editWT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -202,24 +239,28 @@
             android:id="@+id/textTC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="Transportation(RM/tonne)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editTC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="20dp" />
 
         <Button
             android:id="@+id/Next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
             android:text="Next" />
 
     </LinearLayout>
