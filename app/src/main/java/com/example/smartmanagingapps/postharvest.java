@@ -13,6 +13,7 @@ public class postharvest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_postharvest);
+
         Button Btn = findViewById(R.id.Next);
         Btn.setOnClickListener(new View.OnClickListener() {
             @Override
