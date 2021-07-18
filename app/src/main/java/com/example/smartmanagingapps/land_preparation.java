@@ -18,29 +18,29 @@ public class land_preparation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_land_preparation);
         SQLHelper db = new SQLHelper(this);
-        Button Btn = findViewById(R.id.NextLP);
-        EditText editStartFT = findViewById(R.id.editStartFT);
-        EditText editEndFT = findViewById(R.id.editEndFT);
-        EditText editDurFT = findViewById(R.id.editDurationFT);
-        EditText editWeightFT = findViewById(R.id.editWeightFT);
-        EditText editCostFT = findViewById(R.id.editCostFT);
-        EditText editStartST = findViewById(R.id.editStartST);
-        EditText editEndST = findViewById(R.id.editEndST);
-        EditText editDurST = findViewById(R.id.editDurationST);
-        EditText editWeightST = findViewById(R.id.editWeightST);
-        EditText editCostST = findViewById(R.id.editCostST);
-        EditText editStartTT = findViewById(R.id.editStartTT);
-        EditText editEndTT = findViewById(R.id.editEndTT);
-        EditText editDurTT = findViewById(R.id.editDurationTT);
-        EditText editWeightTT = findViewById(R.id.editWeightTT);
-        EditText editCostTT = findViewById(R.id.editCostTT);
+
 
         List<String> list = new ArrayList<String>();
         Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String StartFT = editStartFT.getText().toString();
-                String EndFT = editEndFT.getText().toString();
+                String EndFT = editEndFT.getText().toString();Button Btn = findViewById(R.id.NextLP);
+                EditText editStartFT = findViewById(R.id.editStartFT);
+                EditText editEndFT = findViewById(R.id.editEndFT);
+                EditText editDurFT = findViewById(R.id.editDurationFT);
+                EditText editWeightFT = findViewById(R.id.editWeightFT);
+                EditText editCostFT = findViewById(R.id.editCostFT);
+                EditText editStartST = findViewById(R.id.editStartST);
+                EditText editEndST = findViewById(R.id.editEndST);
+                EditText editDurST = findViewById(R.id.editDurationST);
+                EditText editWeightST = findViewById(R.id.editWeightST);
+                EditText editCostST = findViewById(R.id.editCostST);
+                EditText editStartTT = findViewById(R.id.editStartTT);
+                EditText editEndTT = findViewById(R.id.editEndTT);
+                EditText editDurTT = findViewById(R.id.editDurationTT);
+                EditText editWeightTT = findViewById(R.id.editWeightTT);
+                EditText editCostTT = findViewById(R.id.editCostTT);
                 String DurFT = editDurFT.getText().toString();
                 String WeightFT = editWeightFT.getText().toString();
                 String CostFT = editCostFT.getText().toString();
