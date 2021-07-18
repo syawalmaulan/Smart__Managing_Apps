@@ -45,29 +45,6 @@
 
         <TextView
 
-            android:id="@+id/textArea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:text="Area(ha)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editArea1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:ems="10"
-            android:inputType="number" />
-
-        <TextView
-
 
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
@@ -195,30 +172,6 @@
 
         <TextView
 
-            android:id="@+id/textArea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:text="Area(ha)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editArea2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-
             android:id="@+id/textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -342,30 +295,6 @@
             android:text="Third Tillage"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
-
-        <TextView
-
-            android:id="@+id/textArea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:text="Area(ha)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editArea2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:textSize="20dp"
-            android:typeface="monospace" />
 
         <TextView
 

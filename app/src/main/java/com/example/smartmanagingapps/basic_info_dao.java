@@ -19,4 +19,7 @@ public interface basic_info_dao {
     @Query("DELETE FROM basic_info")
     void deleteAll();
 
+    @Query("UPDATE sqlite_sequence SET seq = 0 WHERE name = 'basic_info'")
+    void clearPrimaryKey();
+
 }
