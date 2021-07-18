@@ -85,15 +85,15 @@
             android:textStyle="bold"
             android:typeface="monospace" />
 
+
         <EditText
-            android:id="@+id/editArea"
+            android:id="@+id/editTextNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
+            android:ems="10"
+            android:inputType="number" />
 
         <TextView
             android:id="@+id/textView1"
@@ -188,13 +188,13 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editStart"
+            android:id="@+id/editTextTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="20dp"
-            android:typeface="monospace" />
+            android:ems="10"
+            android:inputType="time" />
 
         <TextView
             android:id="@+id/textEnd"
@@ -208,13 +208,13 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editEnd"
+            android:id="@+id/editTextTime2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="20dp"
-            android:typeface="monospace" />
+            android:ems="10"
+            android:inputType="time" />
 
         <TextView
             android:id="@+id/textDuration"
