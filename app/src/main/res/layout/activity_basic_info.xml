@@ -106,4 +106,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="NEXT PAGE" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DELETE DB" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="CHECK DB" />
 </LinearLayout>
