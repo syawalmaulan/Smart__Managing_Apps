@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -16,12 +17,14 @@ import java.util.List;
 
 public class land_preparation extends AppCompatActivity {
 
-//    EditText editArea = findViewById(R.id.editArea1);
+    //    EditText editArea = findViewById(R.id.editArea1);
 //    EditText editStart = findViewById(R.id.editStart);
 //    EditText editEnd = findViewById(R.id.editEnd);
 //    EditText editDuration = findViewById(R.id.editDuration);
 //    EditText editWeight = findViewById(R.id.editWeight);
 //    EditText editCost = findViewById(R.id.editCost);
+    TextView skipBtn1;
+    TextView skipBtn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,40 @@ public class land_preparation extends AppCompatActivity {
         EditText editDurTT = findViewById(R.id.editDurationTT);
         EditText editWeightTT = findViewById(R.id.editWeightTT);
         EditText editCostTT = findViewById(R.id.editCostTT);
+        skipBtn1 = findViewById(R.id.textView2);
+        skipBtn2 = findViewById(R.id.textView3);
+        skipBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editStartST.setText("0");
+                editEndST.setText("0");
+                editDurST.setText("0");
+                editWeightST.setText("0");
+                editCostST.setText("0");
+                editStartST.setEnabled(false);
+                editEndST.setEnabled(false);
+                editDurST.setEnabled(false);
+                editWeightST.setEnabled(false);
+                editCostST.setEnabled(false);
+
+            }
+        });
+        skipBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editStartTT.setText("0");
+                editEndTT.setText("0");
+                editDurTT.setText("0");
+                editWeightTT.setText("0");
+                editCostTT.setText("0");
+                editStartTT.setEnabled(false);
+                editEndTT.setEnabled(false);
+                editDurTT.setEnabled(false);
+                editWeightTT.setEnabled(false);
+                editCostTT.setEnabled(false);
+
+            }
+        });
 
         List<String> list = new ArrayList<String>();
         Btn.setOnClickListener(new View.OnClickListener() {
@@ -66,19 +103,20 @@ public class land_preparation extends AppCompatActivity {
                 int WeightTT = Integer.parseInt(editWeightTT.getText().toString());
                 int CostTT = Integer.parseInt(editCostTT.getText().toString());
 
-                LandPrepTable landPrepTable = new LandPrepTable(StartFT,EndFT,DurFT,WeightFT,CostFT,StartST,EndST,DurST,WeightST,CostST,StartTT,EndTT,DurTT,WeightTT,CostTT);
+                LandPrepTable landPrepTable = new LandPrepTable(StartFT, EndFT, DurFT, WeightFT, CostFT, StartST, EndST, DurST, WeightST, CostST, StartTT, EndTT, DurTT, WeightTT, CostTT);
                 insertDataToLandPrepTable(landPrepTable);
-                Intent intent = new Intent(v.getContext(),data_input.class);
+                Intent intent = new Intent(v.getContext(), Test.class);
                 startActivity(intent);
             }
         });
     }
+
     @Override
-    public void onBackPressed () {
+    public void onBackPressed() {
         Toast.makeText(this, "To Get Back To Previous Page, Finish Filling Up the Details", Toast.LENGTH_SHORT).show();
     }
 
-    void insertDataToLandPrepTable(LandPrepTable landPrepTable){
+    void insertDataToLandPrepTable(LandPrepTable landPrepTable) {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -86,9 +124,10 @@ public class land_preparation extends AppCompatActivity {
             }
         });
         thread.start();
-        Toast.makeText(getApplicationContext(),landPrepTable.getId(),Toast.LENGTH_SHORT);
+//        Toast.makeText(getApplicationContext(), landPrepTable.getId(), Toast.LENGTH_SHORT);
     }
-    void deleteTable(){
+
+    void deleteTable() {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -96,6 +135,6 @@ public class land_preparation extends AppCompatActivity {
             }
         });
         thread.start();
-        Toast.makeText(getApplicationContext(),"All values in Table has been removed",Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(), "All values in Table has been removed", Toast.LENGTH_SHORT);
     }
 }

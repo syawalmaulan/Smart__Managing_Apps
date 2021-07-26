@@ -2,13 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textDirection="locale"
     tools:context=".land_preparation"
-    tools:ignore="HardcodedText,ObsoleteLayoutParam,DuplicateIds,TextFields,SpUsage" >
+    tools:ignore="HardcodedText,ObsoleteLayoutParam,DuplicateIds,TextFields,SpUsage">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="912dp"
-        android:orientation="vertical" >
+        android:background="#A5E693"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView1"
@@ -18,7 +20,9 @@
             android:layout_marginTop="10dp"
             android:text="LAND PREPARATION"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
         <TextView
             android:id="@+id/text1"
@@ -37,36 +41,29 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="First Tillage"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
 
-        <TextView
-
-
-            android:id="@+id/textStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:text="Time Start"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
         <EditText
             android:id="@+id/editStartFT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="Time Start"
+            android:inputType="number"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
             android:textSize="20dp"
-            android:typeface="monospace"></EditText>
+            android:typeface="sans"></EditText>
 
         <TextView
             android:id="@+id/textEnd"
@@ -75,19 +72,23 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Time End"
             android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editEndFT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -98,19 +99,23 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Duration(h)"
             android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editDurationFT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -122,19 +127,23 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Weight of Tractor(kg)"
             android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editWeightFT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -145,30 +154,58 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Operation Cost(RM/ha)"
             android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editCostFT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
-        <TextView
-            android:id="@+id/Secondtillage"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Second Tillage"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Secondtillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.5"
+                android:text="Second Tillage"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="bottom"
+                android:text="SKIP"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </LinearLayout>
 
         <TextView
 
@@ -186,11 +223,14 @@
 
         <EditText
             android:id="@+id/editStartST"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -209,11 +249,14 @@
 
         <EditText
             android:id="@+id/editEndST"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -232,11 +275,14 @@
 
         <EditText
             android:id="@+id/editDurationST"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -256,11 +302,14 @@
 
         <EditText
             android:id="@+id/editWeightST"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -279,22 +328,47 @@
 
         <EditText
             android:id="@+id/editCostST"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
-        <TextView
-            android:id="@+id/Thirdtillage"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Third Tillage"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Thirdtillage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.9"
+                android:text="Third Tillage"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="bottom|left"
+                android:text="SKIP"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <TextView
 
@@ -313,16 +387,19 @@
 
         <EditText
             android:id="@+id/editStartTT"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
-            android:textSize="20dp"
 
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textSize="20dp"
             android:typeface="monospace"></EditText>
 
-            android:typeface="monospace" />
+        android:typeface="monospace" />
 
 
         <TextView
@@ -340,11 +417,14 @@
 
         <EditText
             android:id="@+id/editEndTT"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -363,11 +443,14 @@
 
         <EditText
             android:id="@+id/editDurationTT"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -387,11 +470,14 @@
 
         <EditText
             android:id="@+id/editWeightTT"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -410,11 +496,14 @@
 
         <EditText
             android:id="@+id/editCostTT"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -424,6 +513,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:text="Next" />
 
     </LinearLayout>
