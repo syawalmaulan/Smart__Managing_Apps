@@ -17,7 +17,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:text="SPRAYING"
+            android:text="FERTILIZING"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
 

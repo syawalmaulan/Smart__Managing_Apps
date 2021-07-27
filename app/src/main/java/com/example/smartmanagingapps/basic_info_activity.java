@@ -20,8 +20,6 @@ public class basic_info_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_info);
         Button btn2 = findViewById(R.id.button2);
-      
-        SQLHelper db = new SQLHelper(this);
         Button btn = findViewById(R.id.buttonNext);
         EditText editName = findViewById(R.id.editName);
         EditText editLocation = findViewById(R.id.editLocation);
@@ -29,38 +27,38 @@ public class basic_info_activity extends AppCompatActivity {
         RadioButton landStat1 = findViewById(R.id.radioRent);
         RadioButton landStat2 = findViewById(R.id.radioOwn);
 
-        List<String> list = new ArrayList<String>();
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deleteTable();
-            }
-        });
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = editName.getText().toString();
-                String loc = editLocation.getText().toString();
-                int size = Integer.parseInt(String.valueOf(editSize.getText()));
-                boolean landStat = true;
-                landStat = getLandStat(landStat1,landStat2,landStat);
-                Basic_Info_DB basic_info_db = new Basic_Info_DB(name,loc,size,landStat);
-                insertDataToBasicTable(basic_info_db);
-                Intent intent = new Intent(v.getContext(),data_input.class);
-                startActivity(intent);
-            }
-        });
-    }
+            List<String> list = new ArrayList<String>();
+            btn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    deleteTable();
+                }
+            });
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String name = editName.getText().toString();
+                    String loc = editLocation.getText().toString();
+                    int size = Integer.parseInt(String.valueOf(editSize.getText()));
+                    boolean landStat = true;
+                    landStat = getLandStat(landStat1,landStat2,landStat);
+                    Basic_Info_DB basic_info_db = new Basic_Info_DB(name,loc,size,landStat);
+                    insertDataToBasicTable(basic_info_db);
+                    Intent intent = new Intent(v.getContext(),data_input.class);
+                    startActivity(intent);
+                }
+            });
+        }
 
 
-    void insertDataToBasicTable(Basic_Info_DB basic_info_db){
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().InsertBasicInfo(basic_info_db);
-            }
-        });
-        thread.start();
+        void insertDataToBasicTable(Basic_Info_DB basic_info_db){
+            Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().InsertBasicInfo(basic_info_db);
+                }
+            });
+            thread.start();
         Toast.makeText(getApplicationContext(),basic_info_db.getNameVal().toString(),Toast.LENGTH_SHORT);
     }
     void deleteTable(){
@@ -82,7 +80,7 @@ public class basic_info_activity extends AppCompatActivity {
             return  val =  false;//rent
         }
         else if(v2.isChecked() == true){
-            return val =  true;//true
+            return val =  true;//own
         }
         return val;
     }

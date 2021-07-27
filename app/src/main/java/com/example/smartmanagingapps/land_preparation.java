@@ -1,4 +1,4 @@
-package com.example.smartmanagingapps;
+0package com.example.smartmanagingapps;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,23 +11,18 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.smartmanagingapps.LandPrepTable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class land_preparation extends AppCompatActivity {
 
-    EditText editArea = findViewById(R.id.editArea1);
-    EditText editStart = findViewById(R.id.editStart);
-    EditText editEnd = findViewById(R.id.editEnd);
-    EditText editDuration = findViewById(R.id.editDuration);
-    EditText editWeight = findViewById(R.id.editWeight);
-    EditText editCost = findViewById(R.id.editCost);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_land_preparation);
-        SQLHelper db = new SQLHelper(this);
+        setContentView(R.layout.layout.layout.activity_land_preparation);
         Button Btn = findViewById(R.id.NextLP);
         EditText editStartFT = findViewById(R.id.editStartFT);
         EditText editEndFT = findViewById(R.id.editEndFT);
@@ -51,30 +46,23 @@ public class land_preparation extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                String StartFT = editStartFT.getText().toString();
-                String EndFT = editEndFT.getText().toString();
-                String DurFT = editDurFT.getText().toString();
-                String WeightFT = editWeightFT.getText().toString();
-                String CostFT = editCostFT.getText().toString();
-                String StartST = editStartST.getText().toString();
-                String EndST = editEndST.getText().toString();
-                String DurST = editDurST.getText().toString();
-                String WeightST = editWeightST.getText().toString();
-                String CostST = editCostST.getText().toString();
-                String StartTT = editStartTT.getText().toString();
-                String EndTT = editEndTT.getText().toString();
-                String DurTT = editDurTT.getText().toString();
-                String WeightTT = editWeightTT.getText().toString();
-                String CostTT = editCostTT.getText().toString();
-
-                list.add(StartFT);list.add(EndFT);list.add(DurFT);list.add(WeightFT);
-                list.add(CostFT);//First tillage
-                list.add(StartST);list.add(EndST);list.add(DurST);list.add(WeightST);
-                list.add(CostST);//second tillage
-                list.add(StartTT);list.add(EndTT);list.add(DurTT);list.add(WeightTT);
-                list.add(CostTT);//third tillage
-                db.addBasicData(list);
-
+                int StartFT = Integer.parseInt(editStartFT.getText().toString());
+                int EndFT = Integer.parseInt(editEndFT.getText().toString());
+                int DurFT = Integer.parseInt(editDurFT.getText().toString());
+                int WeightFT = Integer.parseInt(editWeightFT.getText().toString());
+                int CostFT = Integer.parseInt(editCostFT.getText().toString());
+                int StartST = Integer.parseInt(editStartST.getText().toString());
+                int EndST = Integer.parseInt(editEndST.getText().toString());
+                int DurST = Integer.parseInt(editDurST.getText().toString());
+                int WeightST = Integer.parseInt(editWeightST.getText().toString());
+                int CostST = Integer.parseInt(editCostST.getText().toString());
+                int StartTT = Integer.parseInt(editStartTT.getText().toString());
+                int EndTT = Integer.parseInt(editEndTT.getText().toString());
+                int DurTT = Integer.parseInt(editDurTT.getText().toString());
+                int WeightTT = Integer.parseInt(editWeightTT.getText().toString());
+                int CostTT = Integer.parseInt(editCostTT.getText().toString());
+                LandPrepTable landPrepTable = new LandPrepTable(StartFT,EndFT,DurFT,WeightFT,CostFT,StartST,EndST,DurST,WeightST,CostST,StartTT,EndTT,DurTT,WeightTT,CostTT);
+                insertDataToLandPrepTable(landPrepTable)=;
                 Intent intent = new Intent(v.getContext(),data_input.class);
                 startActivity(intent);
             }
