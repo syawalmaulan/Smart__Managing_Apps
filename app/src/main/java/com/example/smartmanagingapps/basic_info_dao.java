@@ -13,6 +13,9 @@ public interface basic_info_dao {
     @Query("SELECT * FROM basic_info")
     List<Basic_Info_DB> getAllData();
 
+    @Query("SELECT * FROM basic_info WHERE id =:id")
+    Basic_Info_DB getRowDataById(int id);
+
     @Insert
     void InsertBasicInfo(Basic_Info_DB basic_info_db);
 

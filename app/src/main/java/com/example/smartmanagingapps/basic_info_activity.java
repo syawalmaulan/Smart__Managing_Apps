@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,15 +14,18 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class basic_info_activity extends AppCompatActivity {
+import static android.content.ContentValues.TAG;
 
+public class basic_info_activity extends AppCompatActivity implements View.OnClickListener{
+
+    Basic_Info_DB listed;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_info);
         Button btn2 = findViewById(R.id.button2);
       
-        SQLHelper db = new SQLHelper(this);
+//        SQLHelper db = new SQLHelper(this);
         Button btn = findViewById(R.id.buttonNext);
         EditText editName = findViewById(R.id.editName);
         EditText editLocation = findViewById(R.id.editLocation);
@@ -33,7 +37,11 @@ public class basic_info_activity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteTable();
+                try {
+                    deleteTable();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
         btn.setOnClickListener(new View.OnClickListener() {
@@ -63,16 +71,19 @@ public class basic_info_activity extends AppCompatActivity {
         thread.start();
         Toast.makeText(getApplicationContext(),basic_info_db.getNameVal().toString(),Toast.LENGTH_SHORT);
     }
-    void deleteTable(){
+    void deleteTable() throws InterruptedException {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().deleteAll();
+//                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().deleteAll();
                 DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().clearPrimaryKey();
+                listed = DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().getRowDataById(1);
             }
         });
         thread.start();
-        Toast.makeText(getApplicationContext(),"All values in Table has been removed",Toast.LENGTH_SHORT);
+        thread.join();
+
+        Log.d(TAG,listed.toString());
     }
 
 
@@ -88,4 +99,8 @@ public class basic_info_activity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }
