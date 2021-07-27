@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="\nOwner's name"
+        android:text="Basic Information"
         android:textColor="#000000"
-        android:textSize="15dp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:typeface="monospace" />
+        android:typeface="sans" />
 
     <EditText
         android:id="@+id/editName"
@@ -26,18 +26,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Name"
         android:textSize="20dp"
-        android:typeface="monospace" />
-
-    <TextView
-        android:id="@+id/textLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Location"
-        android:textColor="#000000"
-        android:textSize="15dp"
-        android:textStyle="bold"
         android:typeface="monospace" />
 
     <EditText
@@ -48,18 +39,9 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Location"
         android:inputType="textPostalAddress" />
-
-    <TextView
-        android:id="@+id/textSize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Size(ha)"
-        android:textColor="#000000"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:typeface="monospace" />
 
     <EditText
         android:id="@+id/editSize"
@@ -69,6 +51,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Size (ha)"
         android:inputType="number" />
 
     <TextView
@@ -76,11 +60,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="\nLand Status"
+        android:text="Land Status"
         android:textColor="#000000"
-        android:textSize="15dp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:typeface="monospace" />
+        android:typeface="sans" />
 
     <RadioGroup
         android:layout_width="wrap_content"

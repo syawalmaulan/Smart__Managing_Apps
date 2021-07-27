@@ -2,6 +2,7 @@ package com.example.smartmanagingapps;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "basic_info")
@@ -27,6 +28,7 @@ public class Basic_Info_DB {
         this.sizeVal = sizeVal;
         this.landStat = landStat;
     }
+
 
     public int getId() {
         return id;
