@@ -6,8 +6,9 @@
     tools:ignore="HardcodedText,ObsoleteLayoutParam,DuplicateIds,TextFields,SpUsage" >
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="912dp"
+        android:background="#A5E693"
         android:orientation="vertical">
 
         <TextView
@@ -18,7 +19,9 @@
             android:layout_marginTop="10dp"
             android:text="HARVESTING"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
         <TextView
             android:id="@+id/text1"
@@ -39,75 +42,66 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Date"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextDate"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
-            android:ems="10"
-            android:inputType="date" />
-
-        <TextView
-            android:id="@+id/textArea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Area(ha)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editArea2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:inputType="date"
+            android:background="@color/white"
+            android:hint="Date of Harvesting"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
             android:textSize="20dp"
-            android:typeface="monospace" />
+            android:typeface="sans"/>
 
         <TextView
-            android:id="@+id/textYield"
+            android:id="@+id/Harvestedyield"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Harvested Yield(Tonne)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Harvested Yield (Tonne)"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editYield"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:inputType="date"
+            android:background="@color/white"
+            android:hint="Harvested Yield "
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
             android:textSize="20dp"
-            android:typeface="monospace" />
+            android:typeface="sans"/>
 
         <TextView
-            android:id="@+id/textLS"
+            android:id="@+id/TypeCH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="\nType of combine harvester used"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Type of Combine Harvester used"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -120,7 +114,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Mini combine harvester" />
+                android:text="Mini combine harvester"
+                android:textStyle="bold"/>
 
             <RadioButton
                 android:id="@+id/radioCombine"
@@ -128,132 +123,175 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Combine harvester" />
+                android:text="Combine harvester"
+                android:textStyle="bold"/>
 
 
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/TimetakenH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
             android:text="Time Taken"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textStart"
+            android:id="@+id/StartH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Start"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTime3"
+            android:id="@+id/editStartH"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
-            android:ems="10"
-            android:inputType="time" />
-
-        <TextView
-            android:id="@+id/textEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="End"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editTextTime4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:ems="10"
-            android:inputType="time" />
-
-        <TextView
-            android:id="@+id/textDuration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Duration(h)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editDuration"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="Time Start"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
             android:textSize="20dp"
-            android:typeface="monospace" />
+            android:typeface="sans"/>
 
         <TextView
-            android:id="@+id/textCost"
-            android:layout_width="182dp"
+            android:id="@+id/EndH"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="End"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editEndH"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="Time End "
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/DurationH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Duration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDurationH"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="Harvested Yield "
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/CostH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
-            android:text="Cost per Tonne"
+            android:text="Cost in Harvesting"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textCC"
+            android:id="@+id/CostCh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Combine harvester(RM/tonne)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Combine Harvester (RM/Tonne)"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editWT"
+            android:id="@+id/editCostCH"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="Cost for Combine Harvester "
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
             android:textSize="20dp"
-            android:typeface="monospace" />
+            android:typeface="sans"/>
 
         <TextView
-            android:id="@+id/textTC"
+            android:id="@+id/CostTransportation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Transportation(RM/tonne)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Transportation (RM/Tonne) "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTC"
+            android:id="@+id/editCostTransportation"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
-            android:textSize="20dp" />
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="Cost for Transportation"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:typeface="sans"/>
 
         <Button
             android:id="@+id/Next"

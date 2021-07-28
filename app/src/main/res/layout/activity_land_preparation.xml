@@ -20,7 +20,7 @@
             android:layout_marginTop="10dp"
             android:text="LAND PREPARATION"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:typeface="sans" />
 
@@ -46,7 +46,8 @@
             android:layout_marginBottom="10dp"
             android:text="First Tillage"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
+
 
         <EditText
             android:id="@+id/editStartFT"
@@ -63,7 +64,7 @@
             android:padding="10dp"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:typeface="sans"></EditText>
+            android:typeface="sans"/>
 
         <TextView
             android:id="@+id/textEnd"
@@ -185,9 +186,8 @@
 
             <TextView
                 android:id="@+id/Secondtillage"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
                 android:layout_weight="0.5"
                 android:text="Second Tillage"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -387,7 +387,7 @@
 
         <EditText
             android:id="@+id/editStartTT"
-            style="@android:style/Widget.Material.EditText"
+            style="@android:style/Widget.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -397,10 +397,7 @@
             android:background="@color/white"
             android:padding="10dp"
             android:textSize="20dp"
-            android:typeface="monospace"></EditText>
-
-        android:typeface="monospace" />
-
+            android:typeface="monospace"/>
 
         <TextView
             android:id="@+id/textEnd"
@@ -417,7 +414,7 @@
 
         <EditText
             android:id="@+id/editEndTT"
-            style="@android:style/Widget.Material.EditText"
+            style="@android:style/Widget.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -443,7 +440,7 @@
 
         <EditText
             android:id="@+id/editDurationTT"
-            style="@android:style/Widget.Material.EditText"
+            style="@android:style/Widget.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -470,7 +467,7 @@
 
         <EditText
             android:id="@+id/editWeightTT"
-            style="@android:style/Widget.Material.EditText"
+            style="@android:style/Widget.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -496,7 +493,7 @@
 
         <EditText
             android:id="@+id/editCostTT"
-            style="@android:style/Widget.Material.EditText"
+            style="@android:style/Widget.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

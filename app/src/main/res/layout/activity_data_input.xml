@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textStyle="bold"
-            android:text="User Data Entry"
+            android:text="DATA INPUT"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
