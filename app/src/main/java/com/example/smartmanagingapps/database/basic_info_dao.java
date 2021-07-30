@@ -1,9 +1,10 @@
-package com.example.smartmanagingapps;
+package com.example.smartmanagingapps.database;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+
+import com.example.smartmanagingapps.database.Basic_Info_DB;
 
 import java.util.List;
 

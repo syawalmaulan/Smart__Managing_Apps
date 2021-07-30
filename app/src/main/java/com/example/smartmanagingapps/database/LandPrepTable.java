@@ -1,16 +1,16 @@
-package com.example.smartmanagingapps;
+package com.example.smartmanagingapps.database;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "seeding")
-public class seedingTable {
+@Entity(tableName = "land_prep")
+public class LandPrepTable {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    public seedingTable(int variety, int time_End_S, int durationVal_S, int Time_Start_S, int OC, int SC , int LC, int No_bag, int WT, int WS) {
+    public LandPrepTable(int time_Start_FT, int time_End_FT, int durationVal_FT, int weight_FT, int cost_FT, int time_Start_ST, int time_End_ST, int durationVal_ST, int weight_ST, int cost_ST, int time_Start_TT, int time_End_TT, int durationVal_TT, int weight_TT, int cost_TT) {
         this.time_Start_FT = time_Start_FT;
         this.time_End_FT = time_End_FT;
         this.durationVal_FT = durationVal_FT;
@@ -203,4 +203,3 @@ public class seedingTable {
 
 
 }
-

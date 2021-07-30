@@ -1,4 +1,4 @@
-package com.example.smartmanagingapps;
+package com.example.smartmanagingapps.database;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -13,7 +13,7 @@ public interface LandPrepDAO {
     List<LandPrepTable> getAllData();
 
     @Insert
-    void InsertLandPrepInfo(LandPrepTable landPrepTable);
+    long InsertLandPrepInfo(LandPrepTable landPrepTable);
 
     @Query("DELETE FROM land_prep")
     void deleteAll();
