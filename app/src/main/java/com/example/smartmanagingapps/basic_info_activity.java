@@ -78,15 +78,18 @@ public class basic_info_activity extends AppCompatActivity implements View.OnCli
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-//                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().deleteAll();
+                DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().deleteAll();
+                DatabaseHandler.getInstance(getApplicationContext()).landPrepDAO().deleteAll();
                 DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().clearPrimaryKey();
-                listed = DatabaseHandler.getInstance(getApplicationContext()).basic_info_dao().getRowDataById(1);
+                DatabaseHandler.getInstance(getApplicationContext()).landPrepDAO().clearPrimaryKey();
+
+
             }
         });
         thread.start();
         thread.join();
 
-        Log.d(TAG,listed.toString());
+//        Log.d(TAG,listed.toString());
     }
 
 
