@@ -7,7 +7,8 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="912dp"
+        android:layout_height="wrap_content"
+        android:background="#A5E693"
         android:orientation="vertical">
 
         <TextView
@@ -48,10 +49,13 @@
 
         <EditText
             android:id="@+id/editFW"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="15dp"
             android:typeface="monospace" />
 
@@ -68,10 +72,13 @@
 
         <EditText
             android:id="@+id/editBag"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -89,19 +96,23 @@
 
         <EditText
             android:id="@+id/editTextNumber"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:text="Ratio of N:P:K"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -111,38 +122,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="N"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
             android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editN"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <TextView
             android:id="@+id/textP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="P"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
             android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editP"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -151,18 +168,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="K"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
             android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editK"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -171,8 +191,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="10dp"
             android:text="Time Taken"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -182,11 +201,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Start"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editTextTime"
@@ -194,19 +213,21 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
             android:ems="10"
-            android:inputType="time" />
+            android:inputType="time"
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/textEnd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="End"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editTextTime2"
@@ -214,19 +235,21 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
             android:ems="10"
-            android:inputType="time" />
+            android:inputType="time"
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/textDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Duration(h)"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editDuration"
@@ -234,6 +257,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
@@ -254,31 +279,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Pesticide(RM/bottle)"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editSC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
-            android:typeface="monospace"
-            android:layout_marginEnd="10dp" />
+            android:typeface="monospace" />
 
         <TextView
             android:id="@+id/textLC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Labour(RM/ha)"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
             android:id="@+id/editLC"
@@ -286,6 +313,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 

@@ -114,8 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Mini combine harvester"
-                android:textStyle="bold"/>
+                android:text="Mini combine harvester" />
 
             <RadioButton
                 android:id="@+id/radioCombine"
@@ -123,8 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Combine harvester"
-                android:textStyle="bold"/>
+                android:text="Combine harvester" />
 
 
         </RadioGroup>
@@ -136,7 +134,6 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_gravity="center_horizontal"
             android:text="Time Taken"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -148,9 +145,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Start"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editStartH"
@@ -176,9 +174,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="End"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editEndH"
@@ -204,9 +203,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Duration"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editDurationH"
@@ -232,7 +232,6 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_gravity="center_horizontal"
             android:text="Cost in Harvesting"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
@@ -244,9 +243,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Combine Harvester (RM/Tonne)"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editCostCH"
@@ -272,9 +272,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
             android:text="Transportation (RM/Tonne) "
+            android:textAlignment="viewStart"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editCostTransportation"
@@ -298,7 +300,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:text="Next" />
 
     </LinearLayout>
