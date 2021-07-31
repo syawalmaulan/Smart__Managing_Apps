@@ -11,10 +11,9 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static android.content.ContentValues.TAG;
+
+import com.example.smartmanagingapps.database.Basic_Info_DB;
 
 public class basic_info_activity extends AppCompatActivity implements View.OnClickListener{
 
@@ -33,7 +32,6 @@ public class basic_info_activity extends AppCompatActivity implements View.OnCli
         RadioButton landStat1 = findViewById(R.id.radioRent);
         RadioButton landStat2 = findViewById(R.id.radioOwn);
 
-        List<String> list = new ArrayList<String>();
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +51,11 @@ public class basic_info_activity extends AppCompatActivity implements View.OnCli
                 boolean landStat = true;
                 landStat = getLandStat(landStat1,landStat2,landStat);
                 Basic_Info_DB basic_info_db = new Basic_Info_DB(name,loc,size,landStat);
-                insertDataToBasicTable(basic_info_db);
+                try {
+                    insertDataToBasicTable(basic_info_db);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 Intent intent = new Intent(v.getContext(),data_input.class);
                 startActivity(intent);
             }
@@ -61,7 +63,7 @@ public class basic_info_activity extends AppCompatActivity implements View.OnCli
     }
 
 
-    void insertDataToBasicTable(Basic_Info_DB basic_info_db){
+    void insertDataToBasicTable(Basic_Info_DB basic_info_db) throws InterruptedException {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -69,6 +71,7 @@ public class basic_info_activity extends AppCompatActivity implements View.OnCli
             }
         });
         thread.start();
+        thread.join();
         Toast.makeText(getApplicationContext(),basic_info_db.getNameVal().toString(),Toast.LENGTH_SHORT);
     }
     void deleteTable() throws InterruptedException {

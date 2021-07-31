@@ -6,12 +6,19 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Basic_Info_DB.class,LandPrepTable.class},version = 1,exportSchema = false)
+import com.example.smartmanagingapps.database.Basic_Info_DB;
+import com.example.smartmanagingapps.database.LandPrepDAO;
+import com.example.smartmanagingapps.database.LandPrepTable;
+import com.example.smartmanagingapps.database.SeedingTable;
+import com.example.smartmanagingapps.database.basic_info_dao;
+import com.example.smartmanagingapps.database.seeding_dao;
+
+@Database(entities = {Basic_Info_DB.class, LandPrepTable.class, SeedingTable.class},version = 1,exportSchema = true)
 public abstract class DatabaseHandler extends RoomDatabase {
 
     public abstract basic_info_dao basic_info_dao();
     public abstract LandPrepDAO landPrepDAO();
-
+    public abstract seeding_dao seeding_dao();
     public static volatile DatabaseHandler INSTANCE;
 
     static DatabaseHandler getInstance(Context context){

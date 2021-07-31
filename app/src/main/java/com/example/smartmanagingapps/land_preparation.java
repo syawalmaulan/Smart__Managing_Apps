@@ -12,8 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.smartmanagingapps.database.LandPrepTable;
 
 public class land_preparation extends AppCompatActivity {
 
@@ -48,6 +47,7 @@ public class land_preparation extends AppCompatActivity {
         EditText editCostTT = findViewById(R.id.editCostTT);
         skipBtn1 = findViewById(R.id.textView2);
         skipBtn2 = findViewById(R.id.textView3);
+
         skipBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +81,6 @@ public class land_preparation extends AppCompatActivity {
             }
         });
 
-        List<String> list = new ArrayList<String>();
         Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
