@@ -104,7 +104,7 @@ public class land_preparation extends AppCompatActivity {
 
                 LandPrepTable landPrepTable = new LandPrepTable(StartFT, EndFT, DurFT, WeightFT, CostFT, StartST, EndST, DurST, WeightST, CostST, StartTT, EndTT, DurTT, WeightTT, CostTT);
                 insertDataToLandPrepTable(landPrepTable);
-                Intent intent = new Intent(v.getContext(), Test.class);
+                Intent intent = new Intent(v.getContext(), data_input.class);
                 startActivity(intent);
             }
         });
