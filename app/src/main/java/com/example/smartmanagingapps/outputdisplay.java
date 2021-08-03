@@ -45,6 +45,7 @@ public class outputdisplay extends AppCompatActivity implements View.OnClickList
                 String string3 = "Field Capacity For First Tillage=" + field_capacityTT + "hec/hrs";
                 String string4 = "Total Cost for Land preparation=" + total_cost_LP + "RM/hec";
                 resultFT.setText(string1 +"\n" + string2 +"\n"+ string3 +"\n"+ string4);
+
                 break;
         }
 
