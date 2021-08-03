@@ -11,7 +11,7 @@ import com.example.smartmanagingapps.database.Basic_Info_DB;
 import com.example.smartmanagingapps.database.LandPrepTable;
 
 public class outputdisplay extends AppCompatActivity implements View.OnClickListener  {
-    TextView test;
+    TextView resultFT;
     Button button;
     Basic_Info_DB lsite;
     LandPrepTable landPrepTable;
@@ -24,7 +24,7 @@ public class outputdisplay extends AppCompatActivity implements View.OnClickList
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        test = findViewById(R.id.textView14);
+        resultFT = findViewById(R.id.textResultFT);
         button = findViewById(R.id.button);
         button.setOnClickListener(this);
 
@@ -36,11 +36,15 @@ public class outputdisplay extends AppCompatActivity implements View.OnClickList
             case R.id.button:
 //              //Field Capacity = Area/Duration
                 //Machine Efficiency = ((96.61 * WT_Tractor)/Field Capacity)* 12000
-                float field_capacity = (lsite.getSizeVal())/landPrepTable.getDurationVal_FT();
-                float machine_efficiency = (float) (((96.61*landPrepTable.getWeight_FT())/(field_capacity* 12000)));
-                String string1 = "Field Capacity = Area/Duration = " + field_capacity ;
-                String string2 = "Machine Efficiency = ((96.61 * WT_Tractor)/Field Capacity)* 12000 =" + machine_efficiency;
-                test.setText(string1 +"\n" + string2);
+                float field_capacityFT = (lsite.getSizeVal())/landPrepTable.getDurationVal_FT();
+                float field_capacityST = (lsite.getSizeVal())/landPrepTable.getDurationVal_ST();
+                float field_capacityTT = (lsite.getSizeVal())/landPrepTable.getDurationVal_TT();
+                float total_cost_LP = (landPrepTable.getCost_FT()+landPrepTable.getCost_ST()+landPrepTable.getCost_TT();
+                String string1 = "Field Capacity For First Tillage=" + field_capacityFT + "hec/hrs";
+                String string2 = "Field Capacity For Second Tillage=" + field_capacityST + "hec/hrs";
+                String string3 = "Field Capacity For First Tillage=" + field_capacityTT + "hec/hrs";
+                String string4 = "Total Cost for Land preparation=" + total_cost_LP + "RM/hec";
+                resultFT.setText(string1 +"\n" + string2 +"\n"+ string3 +"\n"+ string4);
                 break;
         }
 

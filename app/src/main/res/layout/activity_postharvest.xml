@@ -47,7 +47,7 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textLS"
+            android:id="@+id/textMU"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\nMethod used"

@@ -8,18 +8,38 @@
     tools:context=".outputdisplay">
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textOutputdisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="OUTPUT DISPLAY"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/textRFT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="\nFIRST TILLAGE"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textResultFT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         android:text="TextView" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:text="Button" />
+        android:text="RESULT" />
 </LinearLayout>
