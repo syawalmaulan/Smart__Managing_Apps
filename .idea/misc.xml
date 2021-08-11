@@ -10,10 +10,17 @@
         <entry key="..\:/Users/AIMAN RAHIM/AndroidStudioProjects/Smart__Managing_Apps/app/src/main/res/layout/activity_outputdisplay.xml" value="0.1" />
         <entry key="..\:/Users/AIMAN RAHIM/AndroidStudioProjects/Smart__Managing_Apps/app/src/main/res/layout/activity_seeding.xml" value="0.33" />
         <entry key="..\:/Users/AIMAN RAHIM/AndroidStudioProjects/Smart__Managing_Apps/app/src/main/res/layout/activity_spraying.xml" value="0.5" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_basic_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_data_input.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_db_check.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_fertilizing.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_land_preparation.xml" value="0.22" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_outputdisplay.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SmartManagingApps/app/src/main/res/layout/activity_seeding.xml" value="0.18" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

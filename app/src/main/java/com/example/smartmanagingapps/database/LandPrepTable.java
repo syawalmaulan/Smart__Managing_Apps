@@ -10,21 +10,24 @@ public class LandPrepTable {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    public LandPrepTable(int time_Start_FT, int time_End_FT, int durationVal_FT, int weight_FT, int cost_FT, int time_Start_ST, int time_End_ST, int durationVal_ST, int weight_ST, int cost_ST, int time_Start_TT, int time_End_TT, int durationVal_TT, int weight_TT, int cost_TT) {
+    public LandPrepTable(int time_Start_FT, int time_End_FT, int date_FT, int labour_FT, int machine_FT,  int cost_FT, int time_Start_ST, int time_End_ST,  int date_ST, int labour_ST, int machine_ST, int cost_ST, int time_Start_TT, int time_End_TT,  int date_TT, int labour_TT, int machine_TT,int cost_TT) {
         this.time_Start_FT = time_Start_FT;
         this.time_End_FT = time_End_FT;
-        this.durationVal_FT = durationVal_FT;
-        this.weight_FT = weight_FT;
+        this.date_FT = date_FT;
+        this.machine_FT = machine_FT;
+        this.labour_FT = labour_FT;
         this.cost_FT = cost_FT;
         this.time_Start_ST = time_Start_ST;
         this.time_End_ST = time_End_ST;
-        this.durationVal_ST = durationVal_ST;
-        this.weight_ST = weight_ST;
+        this.date_ST = date_ST;
+        this.machine_ST = machine_ST;
+        this.labour_ST = labour_ST;
         this.cost_ST = cost_ST;
         this.time_Start_TT = time_Start_TT;
         this.time_End_TT = time_End_TT;
-        this.durationVal_TT = durationVal_TT;
-        this.weight_TT = weight_TT;
+        this.date_TT = date_TT;
+        this.machine_TT = machine_TT;
+        this.labour_TT = labour_TT;
         this.cost_TT = cost_TT;
     }
 
@@ -52,21 +55,25 @@ public class LandPrepTable {
         this.time_End_FT = time_End_FT;
     }
 
-    public int getDurationVal_FT() {
-        return durationVal_FT;
+    public int getDate_FT() {
+        return date_FT;
     }
 
-    public void setDurationVal_FT(int durationVal_FT) {
-        this.durationVal_FT = durationVal_FT;
+    public void setDate_FT(int date_FT) {
+        this.date_FT = date_FT;
     }
 
-    public int getWeight_FT() {
-        return weight_FT;
+    public int getMachine_FT() {
+        return machine_FT;
     }
 
-    public void setWeight_FT(int weight_FT) {
-        this.weight_FT = weight_FT;
+    public void setMachine_FT(int machine_FT) { this.machine_FT = machine_FT; }
+
+    public int getLabour_FT() {
+        return labour_FT;
     }
+
+    public void setLabour_FT(int labour_FT) { this.labour_FT = labour_FT; }
 
     public int getCost_FT() {
         return cost_FT;
@@ -92,21 +99,25 @@ public class LandPrepTable {
         this.time_End_ST = time_End_ST;
     }
 
-    public int getDurationVal_ST() {
-        return durationVal_ST;
+    public int getDate_ST() {
+        return date_ST;
     }
 
-    public void setDurationVal_ST(int durationVal_ST) {
-        this.durationVal_ST = durationVal_ST;
+    public void setDate_ST(int date_ST) {
+        this.date_ST = date_ST;
     }
 
-    public int getWeight_ST() {
-        return weight_ST;
+    public int getMachine_ST() {
+        return machine_ST;
     }
 
-    public void setWeight_ST(int weight_ST) {
-        this.weight_ST = weight_ST;
+    public void setMachine_ST(int machine_ST) { this.machine_ST = machine_ST; }
+
+    public int getLabour_ST() {
+        return labour_ST;
     }
+
+    public void setLabour_ST(int labour_ST) { this.labour_ST = labour_ST; }
 
     public int getCost_ST() {
         return cost_ST;
@@ -132,21 +143,25 @@ public class LandPrepTable {
         this.time_End_TT = time_End_TT;
     }
 
-    public int getDurationVal_TT() {
-        return durationVal_TT;
+    public int getDate_TT() {
+        return date_TT;
     }
 
-    public void setDurationVal_TT(int durationVal_TT) {
-        this.durationVal_TT = durationVal_TT;
+    public void setDate_TT(int date_TT) {
+        this.date_TT = date_TT;
     }
 
-    public int getWeight_TT() {
-        return weight_TT;
+    public int getMachine_TT() {
+        return machine_TT;
     }
 
-    public void setWeight_TT(int weight_TT) {
-        this.weight_TT = weight_TT;
+    public void setMachine_TT(int machine_TT) { this.machine_TT = machine_TT; }
+
+    public int getLabour_FT() {
+        return labour_FT;
     }
+
+    public void setLabour_FT(int labour_FT) { this.labour_FT = labour_FT; }
 
     public int getCost_TT() {
         return cost_TT;
@@ -163,10 +178,13 @@ public class LandPrepTable {
     private int time_End_FT;
 
     @ColumnInfo
-    private int durationVal_FT;
+    private int date_FT;
 
     @ColumnInfo
-    private int weight_FT;
+    private int machine_FT;
+
+    @ColumnInfo
+    private int labour_FT;
 
     @ColumnInfo
     private int cost_FT;
@@ -178,10 +196,13 @@ public class LandPrepTable {
     private int time_End_ST;
 
     @ColumnInfo
-    private int durationVal_ST;
+    private int date_ST;
 
     @ColumnInfo
-    private int weight_ST;
+    private int machine_ST;
+
+    @ColumnInfo
+    private int labour_ST;
 
     @ColumnInfo
     private int cost_ST;
@@ -193,10 +214,13 @@ public class LandPrepTable {
     private int time_End_TT;
 
     @ColumnInfo
-    private int durationVal_TT;
+    private int date_TT;
 
     @ColumnInfo
-    private int weight_TT;
+    private int machine_TT;
+
+    @ColumnInfo
+    private int labour_TT;
 
     @ColumnInfo
     private int cost_TT;

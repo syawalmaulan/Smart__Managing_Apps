@@ -33,7 +33,7 @@
             android:text="please fill all the info correctly and put 0 if not related"
             android:textColor="#000000"
             android:textSize="10dp"
-            android:textStyle="italic"
+            android:textStyle="bold|italic"
             android:typeface="monospace" />
 
 
@@ -46,11 +46,37 @@
             android:layout_marginBottom="10dp"
             android:text="First Tillage"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold"/>
-
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textDateFT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/editDateFT"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="DD/MM/YYYY"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/timestartFT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -69,17 +95,16 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
-            android:hint="Time Start"
+            android:hint="used 24H system"
             android:inputType="number"
             android:lineSpacingExtra="8sp"
             android:padding="10dp"
-            android:text="0"
             android:textAlignment="viewStart"
             android:textSize="20dp"
             android:typeface="sans" />
 
         <TextView
-            android:id="@+id/textEnd"
+            android:id="@+id/timeEnd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -100,53 +125,27 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
-            android:padding="10dp"
-            android:text="0"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/textDurationFT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="sans-serif-light"
-            android:text="Duration(h)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:typeface="sans" />
-
-        <EditText
-            android:id="@+id/editDurationFT"
-            style="@style/Widget.AppCompat.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/white"
+            android:hint="used 24H system"
             android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
 
         <TextView
-            android:id="@+id/textWeight"
+            android:id="@+id/textMachineST"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="Weight of Tractor(kg)"
+            android:text="Type and Model of machine/equipment used"
             android:textColor="#000000"
             android:textSize="15dp"
             android:typeface="sans" />
 
         <EditText
-            android:id="@+id/editWeightFT"
+            android:id="@+id/editMachineFT"
             style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -159,7 +158,32 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textCost"
+            android:id="@+id/textlabourFT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="No of labour"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/editlabourFT"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+        <TextView
+            android:id="@+id/textCostFT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -217,8 +241,35 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/textDateST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:typeface="sans" />
 
-            android:id="@+id/textStart"
+        <EditText
+            android:id="@+id/editDateST"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="DD/MM/YYYY"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+
+        <TextView
+
+            android:id="@+id/textStartST"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -241,10 +292,11 @@
             android:background="@color/white"
             android:padding="10dp"
             android:textSize="20dp"
+            android:hint="used 24H system"
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textEnd"
+            android:id="@+id/textEndST"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -267,23 +319,49 @@
             android:background="@color/white"
             android:padding="10dp"
             android:textSize="20dp"
+            android:hint="used 24H system"
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textDurationST"
+            android:id="@+id/textMachineFT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="Duration(h)"
+            android:text="Type and Model of machine/equipment used"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
-            android:id="@+id/editDurationST"
+            android:id="@+id/editMachineST"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+        <TextView
+            android:id="@+id/textlabourST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="No of labour"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/editlabourST"
             style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -295,35 +373,8 @@
             android:textSize="20dp"
             android:typeface="monospace" />
 
-
         <TextView
-            android:id="@+id/textWeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="sans-serif-light"
-            android:text="Weight of Tractor(kg)"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:typeface="monospace" />
-
-        <EditText
-            android:id="@+id/editWeightST"
-            style="@style/Widget.AppCompat.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/white"
-            android:padding="10dp"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/textCost"
+            android:id="@+id/textCostST"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -380,6 +431,33 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/textDateTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/editDateTT"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="DD/MM/YYYY"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:typeface="monospace" />
+
+        <TextView
 
 
             android:id="@+id/textStart"
@@ -402,11 +480,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
-
+            android:hint="used 24H system"
             android:background="@color/white"
             android:padding="10dp"
             android:textSize="20dp"
-            android:typeface="monospace"/>
+            android:typeface="monospace" />
 
         <TextView
             android:id="@+id/textEnd"
@@ -430,26 +508,27 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
+            android:hint="used 24H system"
             android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textDuration"
+            android:id="@+id/textMachineTT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="Duration(h)"
+            android:text="Type and Model of machine/equipment used"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
-            android:id="@+id/editDurationTT"
-            style="@android:style/Widget.EditText"
+            android:id="@+id/editMachineTT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -459,24 +538,22 @@
             android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
-
-
         <TextView
-            android:id="@+id/textWeight"
+            android:id="@+id/textlabourTT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="Weight of Tractor(kg)"
+            android:text="No of labour"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:typeface="monospace" />
+            android:typeface="sans" />
 
         <EditText
-            android:id="@+id/editWeightTT"
-            style="@android:style/Widget.EditText"
+            android:id="@+id/editlabourTT"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

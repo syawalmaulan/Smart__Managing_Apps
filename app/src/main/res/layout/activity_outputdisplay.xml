@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".outputdisplay">
+    android:textDirection="locale"
+    tools:context=".outputdisplay"
+    tools:ignore="HardcodedText,ObsoleteLayoutParam,DuplicateIds,TextFields,SpUsage">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="912dp"
+        android:background="#A5E693"
+        android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/textOutputdisplay"
@@ -14,32 +20,160 @@
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
         android:text="OUTPUT DISPLAY"
+        android:layout_marginTop="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
     <TextView
-        android:id="@+id/textRFT"
+        android:id="@+id/textRLP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="\nFIRST TILLAGE"
-        android:textSize="15dp"
+        android:text="\nLAND PREPARATION"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:textColor="#000000" />
 
+        <TextView
+            android:id="@+id/textResultLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="Result for Land Preparation Operation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
     <TextView
-        android:id="@+id/textResultFT"
+        android:id="@+id/textRSeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:text="TextView" />
+        android:text="\nSEEDING"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/button"
+        <TextView
+            android:id="@+id/textResultSeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="Result for Seeding Operation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textRF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="RESULT" />
-</LinearLayout>
+        android:layout_marginStart="10dp"
+        android:text="\nFERTILIZING"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textResultF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="Result for Fertilizing Operation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textRSpray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="\nSPRAYING"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textResultSpray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="Result for Spraying Operation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+        <TextView
+            android:id="@+id/textRH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="\nHARVESTING"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textResultH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="Result for Harvesting Operation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+        <TextView
+            android:id="@+id/textRPH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="\nPOSTHARVEST"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textResultPH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="Result for Postharvest Operation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="RESULT" />
+
+    </LinearLayout>
+</ScrollView>

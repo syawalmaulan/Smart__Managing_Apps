@@ -18,8 +18,10 @@ public interface seeding_dao {
     @Query("DELETE FROM SeedingTable")
     void deleteAll();
 
-    @Query("UPDATE sqlite_sequence SET seq = 0 WHERE name = 'basic_info'")
+    @Query("UPDATE sqlite_sequence SET seq = 0 WHERE name = 'SeedingTable'")
     void clearPrimaryKey();
 
+    @Query("SELECT * FROM SeedingTable WHERE id = :id")
+    SeedingTable getRowDataById(int id);
 }
 
