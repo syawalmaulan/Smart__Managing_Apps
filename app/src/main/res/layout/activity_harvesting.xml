@@ -196,34 +196,7 @@
             android:textSize="20dp"
             android:typeface="sans"/>
 
-        <TextView
-            android:id="@+id/DurationH"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif-light"
-            android:text="Duration"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="15sp" />
 
-        <EditText
-            android:id="@+id/editDurationH"
-            style="@style/Widget.AppCompat.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:inputType="numberDecimal"
-            android:background="@color/white"
-            android:hint="Harvested Yield "
-            android:lineSpacingExtra="8sp"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:typeface="sans"/>
 
         <TextView
             android:id="@+id/CostH"
@@ -234,7 +207,8 @@
             android:layout_marginBottom="10dp"
             android:text="Cost in Harvesting"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:typeface="monospace"/>
 
         <TextView
             android:id="@+id/CostCh"

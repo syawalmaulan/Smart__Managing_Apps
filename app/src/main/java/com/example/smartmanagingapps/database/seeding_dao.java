@@ -23,5 +23,6 @@ public interface seeding_dao {
 
     @Query("SELECT * FROM SeedingTable WHERE id = :id")
     SeedingTable getRowDataById(int id);
+
 }
 

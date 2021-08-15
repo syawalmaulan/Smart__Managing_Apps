@@ -17,17 +17,16 @@ import java.util.List;
 
 public class seeding extends AppCompatActivity {
     RadioButton Method1;
-    EditText editVariety;
     RadioButton Method2;
-    EditText editWS;
-    EditText editStartS;
-    EditText editEndS;
-    EditText editDurationS;
-    EditText editWT;
-    EditText editNobag;
-    EditText editOC;
-    EditText editSC;
-    EditText editLC;
+    EditText editVarietySd;
+    EditText editMachineSd;
+    EditText editStartSd;
+    EditText editEndSd;
+    EditText editDateSd;
+    EditText editLabourSd;
+    EditText editCostSeedSd;
+    EditText editCostLabourSd;
+    EditText editInputSd;
     Button Btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,16 +34,15 @@ public class seeding extends AppCompatActivity {
         setContentView(R.layout.activity_seeding);
         Method1 = findViewById(R.id.radioDirect);
         Method2 = findViewById(R.id.radioTransplanting);
-        editVariety = findViewById(R.id.editVariety);
-        editStartS = findViewById(R.id.editStartS);
-        editEndS = findViewById(R.id.editEndS);
-        editDurationS = findViewById(R.id.editDurationS);
-        editWT = findViewById(R.id.editWT);
-        editWS = findViewById(R.id.editWS);
-        editNobag = findViewById(R.id.editNobag);
-        editOC = findViewById(R.id.editOC);
-        editSC = findViewById(R.id.editSC);
-        editLC = findViewById(R.id.editLC);
+        editVarietySd = findViewById(R.id.editVarietySd);
+        editStartSd = findViewById(R.id.editStartSd);
+        editEndSd = findViewById(R.id.editEndSd);
+        editMachineSd = findViewById(R.id.editMachineSd);
+        editLabourSd = findViewById(R.id.editLabourSd);
+        editInputSd = findViewById(R.id.editInputSd);
+        editCostSeedSd = findViewById(R.id.editCostSeedSd);
+        editCostLabourSd = findViewById(R.id.editCostLabourSd);
+        editDateSd = findViewById(R.id.editDateSd);
         Btn = findViewById(R.id.Next);
 
 //        List<String> list = new ArrayList<String>();
@@ -52,21 +50,20 @@ public class seeding extends AppCompatActivity {
         Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String Variety = editVariety.getText().toString();
-                int StartS = Integer.parseInt(String.valueOf(editStartS.getText()));
-                int EndS = Integer.parseInt(String.valueOf(editEndS.getText()));
-                int DurationS = Integer.parseInt(String.valueOf(editDurationS.getText()));
-                int Nobag = Integer.parseInt(String.valueOf(editNobag.getText()));
-                int WT = Integer.parseInt(String.valueOf(editWT.getText()));
-                int WS = Integer.parseInt(String.valueOf(editWS.getText()));
-                int OC = Integer.parseInt(String.valueOf(editOC.getText()));
-                int LC = Integer.parseInt(String.valueOf(editLC.getText()));
-                int SC = Integer.parseInt(String.valueOf(editSC.getText()));
-                boolean Method = true;
-                Method = getMethod(Method1, Method2, Method);
-                SeedingTable seedingTable = new SeedingTable(Variety, Method,StartS, EndS, DurationS,WT,WS, Nobag, OC, LC, SC);
+                String VarietySd = editVarietySd.getText().toString();
+                int StartSd = Integer.parseInt(String.valueOf(editStartSd.getText()));
+                int EndSd = Integer.parseInt(String.valueOf(editEndSd.getText()));
+                String MachineSd = editMachineSd.getText().toString();
+                int LabourSd = Integer.parseInt(String.valueOf(editLabourSd.getText()));
+                int DateSd = Integer.parseInt(String.valueOf(editDateSd.getText()));
+                int CostLabourSd= Integer.parseInt(String.valueOf(editCostLabourSd.getText()));
+                int CostSeedSd = Integer.parseInt(String.valueOf(editCostSeedSd.getText()));
+                boolean MethodSd = true;
+                MethodSd = getMethod(Method1, Method2, MethodSd);
+
+                SeedingTable seedingTable = new SeedingTable(VarietySd, MethodSd,StartSd, EndSd, MachineSd,LabourSd,DateSd, CostLabourSd, CostSeedSd);
                 try {
-                    insertDataToBasicTable(seedingTable);
+                    insertDataToSeedingTable(seedingTable);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -76,8 +73,7 @@ public class seeding extends AppCompatActivity {
         });
     }
 
-
-    void insertDataToBasicTable(SeedingTable seedingTable) throws InterruptedException {
+    void insertDataToSeedingTable(SeedingTable seedingTable) throws InterruptedException {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -86,7 +82,7 @@ public class seeding extends AppCompatActivity {
         });
         thread.start();
         thread.join();
-        Toast.makeText(getApplicationContext(), seedingTable.getVariety(), Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(), seedingTable.getId(), Toast.LENGTH_SHORT);
     }
 
     void deleteTable() {

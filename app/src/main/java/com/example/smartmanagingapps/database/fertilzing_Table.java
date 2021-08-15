@@ -6,43 +6,47 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "fertilizingTable")
 public class fertilzing_Table {
+
     @PrimaryKey(autoGenerate = true)
     private int id;
-    @ColumnInfo
-    private int weightVal;
-    @ColumnInfo
-    private int num_of_bag;
-    @ColumnInfo
-    private int areaVal;
-    @ColumnInfo
-    private int nitrogenVal;
-    @ColumnInfo
-    private int phosphorusVal;
-    @ColumnInfo
-    private int potassiumVal;
-    @ColumnInfo
-    private int startTime;
-    @ColumnInfo
-    private int endTime;
-    @ColumnInfo
-    private int durationVal;
-    @ColumnInfo
-    private int pesticide_Cost;
-    @ColumnInfo
-    private int labour_Cost;
 
-    public fertilzing_Table(int weightVal, int num_of_bag, int areaVal, int nitrogenVal, int phosphorusVal, int potassiumVal, int startTime, int endTime, int durationVal, int pesticide_Cost, int labour_Cost) {
-        this.weightVal = weightVal;
-        this.num_of_bag = num_of_bag;
-        this.areaVal = areaVal;
-        this.nitrogenVal = nitrogenVal;
-        this.phosphorusVal = phosphorusVal;
-        this.potassiumVal = potassiumVal;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.durationVal = durationVal;
-        this.pesticide_Cost = pesticide_Cost;
-        this.labour_Cost = labour_Cost;
+    @ColumnInfo
+    private String brandF;
+
+    @ColumnInfo
+    private int time_StartF;
+
+    @ColumnInfo
+    private int time_EndF;
+
+    @ColumnInfo
+    private int dateF;
+
+    @ColumnInfo
+    private String machineF;
+
+    @ColumnInfo
+    private int inputF;
+
+    @ColumnInfo
+    private int labourF;
+
+    @ColumnInfo
+    private int costlabourF;
+
+    @ColumnInfo
+    private int costfertilizerF;
+
+    public fertilzing_Table(String varietyF, int time_StartF, int time_EndF, String machineF, int labourF, int dateF, int costlabourF, int costseedF) {
+        this.brandF = brandF;
+        this.time_StartF= time_StartF;
+        this.time_EndF = time_EndF;
+        this.dateF = dateF;
+        this.machineF = machineF;
+        this.labourF = labourF;
+        this.inputF = inputF;
+        this.costlabourF = costlabourF;
+        this.costfertilizerF = costfertilizerF;
     }
 
     public int getId() {
@@ -53,91 +57,70 @@ public class fertilzing_Table {
         this.id = id;
     }
 
-    public int getWeightVal() {
-        return weightVal;
+    public String getBrandF() {
+        return brandF;
     }
 
-    public void setWeightVal(int weightVal) {
-        this.weightVal = weightVal;
+    public void setBrandF(String varietySd) {
+        this.brandF = brandF;
     }
 
-    public int getNum_of_bag() {
-        return num_of_bag;
+    public int getTime_StartF() {
+        return time_StartF;
     }
 
-    public void setNum_of_bag(int num_of_bag) {
-        this.num_of_bag = num_of_bag;
+    public void setTime_StartF(int time_StartF) {
+        this.time_StartF = time_StartF;
     }
 
-    public int getAreaVal() {
-        return areaVal;
+    public int getTime_EndF() {
+        return time_EndF;
     }
 
-    public void setAreaVal(int areaVal) {
-        this.areaVal = areaVal;
+    public void setTime_EndF(int time_EndF) {
+        this.time_EndF = time_EndF;
     }
 
-    public int getNitrogenVal() {
-        return nitrogenVal;
+    public int getDateF() {
+        return dateF;
     }
 
-    public void setNitrogenVal(int nitrogenVal) {
-        this.nitrogenVal = nitrogenVal;
+    public void setDateF(int dateF) {
+        this.dateF = dateF;
     }
 
-    public int getPhosphorusVal() {
-        return phosphorusVal;
+    public String getMachineF() { return machineF; }
+
+    public void setMachineF(String machineF) { this.machineF = machineF; }
+
+    public int getInputF() {
+        return inputF;
     }
 
-    public void setPhosphorusVal(int phosphorusVal) {
-        this.phosphorusVal = phosphorusVal;
+    public void setInputF(int inputF) {
+        this.inputF = inputF;
     }
 
-    public int getPotassiumVal() {
-        return potassiumVal;
+    public int getLabourF() {
+        return labourF;
     }
 
-    public void setPotassiumVal(int potassiumVal) {
-        this.potassiumVal = potassiumVal;
+    public void setLabourF(int labourSd) { this.labourF = labourF; }
+
+    public int getCostlabourF() {
+        return costlabourF;
     }
 
-    public int getStartTime() {
-        return startTime;
+    public void setCostlabourF(int costlabourF) {
+        this.costlabourF = costlabourF;
     }
 
-    public void setStartTime(int startTime) {
-        this.startTime = startTime;
+    public int getCostfertilizerF() {
+        return costfertilizerF;
     }
 
-    public int getEndTime() {
-        return endTime;
+    public void setCostfertilizerF(int costfertilizerF) {
+        this.costfertilizerF = costfertilizerF;
     }
 
-    public void setEndTime(int endTime) {
-        this.endTime = endTime;
-    }
-
-    public int getDurationVal() {
-        return durationVal;
-    }
-
-    public void setDurationVal(int durationVal) {
-        this.durationVal = durationVal;
-    }
-
-    public int getPesticide_Cost() {
-        return pesticide_Cost;
-    }
-
-    public void setPesticide_Cost(int pesticide_Cost) {
-        this.pesticide_Cost = pesticide_Cost;
-    }
-
-    public int getLabour_Cost() {
-        return labour_Cost;
-    }
-
-    public void setLabour_Cost(int labour_Cost) {
-        this.labour_Cost = labour_Cost;
-    }
 }

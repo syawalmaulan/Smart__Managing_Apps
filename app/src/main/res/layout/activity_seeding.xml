@@ -7,42 +7,47 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="912dp"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        android:background="#A5E693"
+        android:orientation="vertical">
+
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
             android:text="SEEDING"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
             android:text="please fill all the info correctly and put 0 if not related"
+            android:textColor="#000000"
             android:textSize="10dp"
-            android:textStyle="italic"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:textStyle="bold"
+            android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textLS"
+            android:id="@+id/textMethodSd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\nMethod used"
-            android:textSize="15dp"
+            android:layout_marginStart="10dp"
+            android:text="Land Status"
+            android:textColor="#000000"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="sans" />
 
         <RadioGroup
-            android:id="@+id/radioMethod"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp">
 
             <RadioButton
                 android:id="@+id/radioDirect"
@@ -60,202 +65,236 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textVariety"
+            android:id="@+id/textDateSd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Variety"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Date"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editVariety"
+            android:id="@+id/editDateSd"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="DD/MM/YYYY"
+            android:padding="10dp"
             android:textSize="20dp"
             android:typeface="monospace" />
 
+        <TextView
+            android:id="@+id/textMachineSd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Type and Model of Machine/Equipment used"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/editMachineSd"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="Eg:Tractor John Deere 80hp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/textTimetaken"
+            android:id="@+id/textVarietySd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Variety of Paddy Used"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+
+        <EditText
+            android:id="@+id/editVarietySd"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="Eg:MR219"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textStartSd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Time Start"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+
+        <EditText
+            android:id="@+id/editStartSd"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="Use 24hr System"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textEndF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Time End"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/editEndSd"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="Use 24hr System"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textLabourSd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="No.of Labour "
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+
+        <EditText
+            android:id="@+id/editLabourSd"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textTotalinputSd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Total input Used (Kg)"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+
+        <EditText
+            android:id="@+id/editInputSd"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:hint="Total weight of seed used in Kg"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textCostSd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Time Taken"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textStartS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Start"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editStartS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" >
-        </EditText>
-
-        <TextView
-            android:id="@+id/textEndS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="End"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editEndS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/textDurationS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Duration(h)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editDurationS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/textWEIGHT"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Weight"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textWT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Transplanter(kg)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editWT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/textWS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seed(kg/bag)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editWS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-        <TextView
-            android:id="@+id/textBag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No. of Bags used"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editNobag"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="0dp"
             android:text="Cost"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textOC"
+            android:id="@+id/textCostSeedSd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Operation(RM/ha)"
+            android:layout_marginStart="10dp"
+            android:text="Total Seed Cost (RM)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
+            android:typeface="monospace" />
+
 
         <EditText
-            android:id="@+id/editOC"
+            android:id="@+id/editCostSeedSd"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
 
         <TextView
-            android:id="@+id/textSC"
+            android:id="@+id/textCostLabourSd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seed(RM/bag)"
+            android:layout_marginStart="10dp"
+            android:text="Total input Used (Kg)"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editSC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
             android:typeface="monospace" />
 
-        <TextView
-            android:id="@+id/textLC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Labour(RM/ha)"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
         <EditText
-            android:id="@+id/editLC"
+            android:id="@+id/editCostLabourSd"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:typeface="monospace" />
-
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
 
 
 

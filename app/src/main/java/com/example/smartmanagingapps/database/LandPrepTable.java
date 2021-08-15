@@ -157,19 +157,15 @@ public class LandPrepTable {
 
     public void setMachine_TT(int machine_TT) { this.machine_TT = machine_TT; }
 
-    public int getLabour_FT() {
-        return labour_FT;
+    public int getLabour_TT() {
+        return labour_TT;
     }
 
-    public void setLabour_FT(int labour_FT) { this.labour_FT = labour_FT; }
+    public void setLabour_TT(int labour_TT) { this.labour_TT = labour_TT; }
 
-    public int getCost_TT() {
-        return cost_TT;
-    }
+    public int getCost_TT() { return cost_TT; }
 
-    public void setCost_TT(int cost_TT) {
-        this.cost_TT = cost_TT;
-    }
+    public void setCost_TT(int cost_TT) { this.cost_TT = cost_TT; }
 
     @ColumnInfo
     private int time_Start_FT;

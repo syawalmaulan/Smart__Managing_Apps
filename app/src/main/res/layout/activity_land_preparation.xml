@@ -22,7 +22,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:typeface="sans" />
+            android:typeface="monospace" />
 
         <TextView
             android:id="@+id/text1"
@@ -46,7 +46,8 @@
             android:layout_marginBottom="10dp"
             android:text="First Tillage"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:typeface="monospace"/>
 
         <TextView
             android:id="@+id/textDateFT"

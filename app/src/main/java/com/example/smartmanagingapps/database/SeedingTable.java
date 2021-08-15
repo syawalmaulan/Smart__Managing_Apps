@@ -7,17 +7,16 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "SeedingTable")
 public class SeedingTable {
     public SeedingTable(String variety, Boolean methodInfo, int time_Start, int time_End, int durationVal, int transplanter_WT, int seed_WT, int num_of_bag, int operation_Cost, int seed_Cost, int labour_Cost) {
-        this.variety = variety;
         this.methodInfo = methodInfo;
-        this.time_Start = time_Start;
-        this.time_End = time_End;
-        this.durationVal = durationVal;
-        this.transplanter_WT = transplanter_WT;
-        this.seed_WT = seed_WT;
-        this.num_of_bag = num_of_bag;
-        this.operation_Cost = operation_Cost;
-        this.seed_Cost = seed_Cost;
-        this.labour_Cost = labour_Cost;
+        this.varietySd = varietySd;
+        this.time_StartSd = time_StartSd;
+        this.time_EndSd = time_EndSd;
+        this.dateSd = dateSd;
+        this.machineSd = machineSd;
+        this.labourSd = labourSd;
+        this.inputSd = inputSd;
+        this.costlabourSd = costlabourSd;
+        this.costseedSd = costseedSd;
     }
 
 
@@ -26,37 +25,37 @@ public class SeedingTable {
     private int id;
 
     @ColumnInfo
-    private String variety;
+    private String varietySd;
 
     @ColumnInfo
     private Boolean methodInfo;
 
     @ColumnInfo
-    private int time_Start;
+    private int time_StartSd;
 
     @ColumnInfo
-    private int time_End;
+    private int time_EndSd;
 
     @ColumnInfo
-    private int durationVal;
+    private int dateSd;
 
     @ColumnInfo
-    private int transplanter_WT;
+    private String machineSd;
 
     @ColumnInfo
-    private int seed_WT;
+    private int inputSd;
 
     @ColumnInfo
-    private int num_of_bag;
+    private int labourSd;
 
     @ColumnInfo
-    private int operation_Cost;
+    private int costlabourSd;
 
     @ColumnInfo
-    private int seed_Cost;
+    private int costseedSd;
 
-    @ColumnInfo
-    private int labour_Cost;
+    public SeedingTable(String varietySd, boolean methodSd, int time_EndSd, int time_StartSd, String machineSd, int labourSd, int dateSd, int costlabourSd, int costseedSd) {
+    }
 
 
     public int getId() {
@@ -67,12 +66,12 @@ public class SeedingTable {
         this.id = id;
     }
 
-    public String getVariety() {
-        return variety;
+    public String getVarietySd() {
+        return varietySd;
     }
 
-    public void setVariety(String variety) {
-        this.variety = variety;
+    public void setVarietySd(String varietySd) {
+        this.varietySd = varietySd;
     }
 
     public Boolean getMethodInfo() {
@@ -83,76 +82,66 @@ public class SeedingTable {
         this.methodInfo = methodInfo;
     }
 
-    public int getTime_Start() {
-        return time_Start;
+    public int getTime_StartSd() {
+        return time_StartSd;
     }
 
-    public void setTime_Start(int time_Start) {
-        this.time_Start = time_Start;
+    public void setTime_StartSd(int time_StartSd) {
+        this.time_StartSd = time_StartSd;
     }
 
-    public int getTime_End() {
-        return time_End;
+    public int getTime_EndSd() {
+        return time_EndSd;
     }
 
-    public void setTime_End(int time_End) {
-        this.time_End = time_End;
+    public void setTime_EndSd(int time_EndSd) {
+        this.time_EndSd = time_EndSd;
     }
 
-    public int getDurationVal() {
-        return durationVal;
+    public int getDateSd() {
+        return dateSd;
     }
 
-    public void setDurationVal(int durationVal) {
-        this.durationVal = durationVal;
+    public void setDateSd(int dateSd) {
+        this.dateSd = dateSd;
     }
 
-    public int getTransplanter_WT() {
-        return transplanter_WT;
+    public String getMachineSd() { return machineSd; }
+
+    public void setMachineSd(String machineSd) { this.machineSd = machineSd; }
+
+    public int getInputSd() {
+        return inputSd;
     }
 
-    public void setTransplanter_WT(int transplanter_WT) {
-        this.transplanter_WT = transplanter_WT;
+    public void setInputSd(int inputSd) {
+        this.inputSd = inputSd;
     }
 
-    public int getSeed_WT() {
-        return seed_WT;
+    public int getLabourSd() {
+        return labourSd;
     }
 
-    public void setSeed_WT(int seed_WT) {
-        this.seed_WT = seed_WT;
+    public void setLabourSd(int labourSd) {
+        this.labourSd = labourSd;
     }
 
-    public int getNum_of_bag() {
-        return num_of_bag;
+    public int getCostlabourSd() {
+        return costlabourSd;
     }
 
-    public void setNum_of_bag(int num_of_bag) {
-        this.num_of_bag = num_of_bag;
+    public void setCostlabourSd(int costlabourSd) {
+        this.costlabourSd = costlabourSd;
     }
 
-    public int getOperation_Cost() {
-        return operation_Cost;
+    public int getCostseedSd() {
+        return costseedSd;
     }
 
-    public void setOperation_Cost(int operation_Cost) {
-        this.operation_Cost = operation_Cost;
+    public void setCostseedSd(int costseedSd) {
+        this.costseedSd = costseedSd;
     }
 
-    public int getSeed_Cost() {
-        return seed_Cost;
-    }
 
-    public void setSeed_Cost(int seed_Cost) {
-        this.seed_Cost = seed_Cost;
-    }
-
-    public int getLabour_Cost() {
-        return labour_Cost;
-    }
-
-    public void setLabour_Cost(int labour_Cost) {
-        this.labour_Cost = labour_Cost;
-    }
 }
 

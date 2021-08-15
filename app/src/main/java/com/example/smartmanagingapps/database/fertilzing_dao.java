@@ -11,8 +11,11 @@ import java.util.List;
 @Dao
 public interface fertilzing_dao {
 
-    @Query("SELECT * FROM fertilizingTable")
+    @Query("SELECT * FROM fertilzing_Table")
     List<fertilzing_Table> getAllData();
+
+    @Query("SELECT * FROM fertilizingTable WHERE id =:id")
+    fertilzing_Table getRowDataById(int id);
 
     @Insert
     void insertFertilizingData (fertilzing_Table fertilzing_table);

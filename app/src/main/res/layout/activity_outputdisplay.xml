@@ -24,142 +24,97 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textRLP"
+        android:id="@+id/textFCOD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="\nLAND PREPARATION"
+        android:text="\nFIELD CAPACITY"
         android:textSize="20dp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textResultLP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textFieldcapacityOD"
+            android:layout_width="393dp"
+            android:layout_height="99dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:background="@color/white"
-            android:text="Result for Land Preparation Operation"
+            android:text="Result field capacity for all operation"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
             tools:ignore="DuplicateIds" />
 
+
     <TextView
-        android:id="@+id/textRSeed"
+        android:id="@+id/textCOOD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="\nSEEDING"
+        android:text="\nCOST OPERATION"
         android:textSize="20dp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textResultSeed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textCostoperationOD"
+            android:layout_width="393dp"
+            android:layout_height="99dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:background="@color/white"
-            android:text="Result for Seeding Operation"
+            android:text="Result Cost Operation for all Operation"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold" />
 
 
     <TextView
-        android:id="@+id/textRF"
+        android:id="@+id/textCOD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="\nFERTILIZING"
+        android:text="\nCROP OUTPUT"
         android:textSize="20dp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textResultF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textCropoutputOD"
+            android:layout_width="393dp"
+            android:layout_height="99dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:background="@color/white"
-            android:text="Result for Fertilizing Operation"
+            android:text="Result for crop output"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
             tools:ignore="DuplicateIds" />
 
         <TextView
-            android:id="@+id/textRSpray"
+            android:id="@+id/textPPOD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="\nSPRAYING"
+            android:text="\nPRODUCTION PERFORMANCE"
             android:textSize="20dp"
             android:textStyle="bold"
             android:typeface="monospace"
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textResultSpray"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textProductionperformanceOD"
+            android:layout_width="395dp"
+            android:layout_height="107dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:background="@color/white"
-            android:text="Result for Spraying Operation"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateIds" />
-        <TextView
-            android:id="@+id/textRH"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="\nHARVESTING"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/textResultH"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/white"
-            android:text="Result for Harvesting Operation"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateIds" />
-        <TextView
-            android:id="@+id/textRPH"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="\nPOSTHARVEST"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/textResultPH"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/white"
-            android:text="Result for Postharvest Operation"
+            android:text="Result for Production performance"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
